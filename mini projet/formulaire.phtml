@@ -1,0 +1,113 @@
+<form method="POST" action="cv.phtml">
+    <fieldset class="flexbox">
+        <h2>INFORMATIONS</h2>
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom">
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" name="prenom">
+        <label for="email">Email</label>
+        <input type="mail" id="email" name="email">
+        <label for="phone">Téléphone</label>
+        <input type="phone" id="phone" name="phone">
+        <label for="linkedin">Linkedin</label>
+        <input type="text" id="linkedin" name="linkedin">
+        <label for="github">GitHub</label>
+        <input type="text" id="github" name="github">
+        <label for="biographie">Biographie</label>
+        <input type="textarea" name="biographie" id="biographie" />
+        <label for="loisir1">Loisir 1</label>
+        <input type="text" id="loisir1" name="loisir1">
+        <label for="loisir2">Loisir 2</label>
+        <input type="text" id="loisir2" name="loisir2">
+        <label for="loisir3">Loisir 3</label>
+        <input type="text" id="loisir3" name="loisir3">
+        <label for="loisir4">Loisir 4</label>
+        <input type="text" id="loisir4" name="loisir4">
+        <h3>Langues</h3>
+        <div>
+            <input type="checkbox" id="francais" name="francais" value="Français" />
+            <label for="francais">Français</label>
+        </div>
+        <div>
+            <input type="checkbox" id="anglais" name="anglais" value="Anglais" />
+            <label for="anglais">Anglais</label>
+        </div>
+        <div>
+            <input type="checkbox" id="arabe" name="arabe" value="Arabe"/>
+            <label for="arabe">Arabe</label>
+        </div>
+        <div>
+            <input type="checkbox" id="breton" name="breton" value="Breton" />
+            <label for="breton">Breton</label>
+        </div>
+        <div>
+            <input type="checkbox" id="espagnol" name="espagnol" value="Espagnol" />
+            <label for="espagnol">Espagnol</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <h2>COMPETENCES</h2>
+        <h3>Langages de Programmation</h3>
+        <div>
+            <input type="checkbox" id="html" name="hmtl" />
+            <label for="html">HTML</label>
+        </div>
+        <div>
+            <input type="checkbox" id="css" name="css" />
+            <label for="css">CSS</label>
+        </div>
+        <div>
+            <input type="checkbox" id="javaScript" name="javaScript" />
+            <label for="javaScript">JavaScript</label>
+        </div>
+        <div>
+            <input type="checkbox" id="php" name="php" />
+            <label for="php">PHP</label>
+        </div>
+        <div>
+            <input type="checkbox" id="sql" name="sql" />
+            <label for="sql">SQL</label>
+        </div>
+        <h3>Frameworks & Librairies</h3>
+        <div>
+            <input type="checkbox" id="sass" name="sass" />
+            <label for="sass">SASS</label>
+        </div>
+        <div>
+            <input type="checkbox" id="bootstrap" name="bootstrap" />
+            <label for="bootstrap">Bootstrap</label>
+        </div>
+        <div>
+            <input type="checkbox" id="symfony" name="symfony" />
+            <label for="symfony">Symfony</label>
+        </div>
+        <div>
+            <input type="checkbox" id="laravel" name="laravel" />
+            <label for="laravel">Laravel</label>
+        </div>
+        <h3>Logiciels</h3>
+        <div>
+            <input type="checkbox" id="photoshop" name="photoshop" />
+            <label for="photoshop">Photoshop</label>
+        </div>
+        <div>
+            <input type="checkbox" id="illustrator" name="illustrator" />
+            <label for="illustrator">Illustrator</label>
+        </div>
+        <div>
+            <input type="checkbox" id="xd" name="xd" />
+            <label for="xd">XD</label>
+        </div>
+        <div>
+            <input type="checkbox" id="figma" name="figma" />
+            <label for="figma">Figma</label>
+        </div>
+        <h3>Couleur du CV</h3>
+        <label for="color">Couleur</label>
+        <select name="color" id="color">
+        <option value="blue">Bleu</option>
+        <option value="red">Rouge</option>
+    </select>
+    </fieldset>
+    <button type="submit">ENVOYER</button>
+</form>

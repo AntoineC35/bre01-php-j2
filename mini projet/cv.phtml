@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Créateur de CV Moche</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+<header class='<?= $_POST["color"].'-header'?>'>
+<h1><?= $_POST["nom"] . " " . $_POST["prenom"]?></h1>
+<h2>Intitulé du poste</h2>
+</header>
+    <div class="container">
+        <article class="left">
+            <h2 class='<?= $_POST["color"]?>'>INFORMATIONS</h2>
+            <section class="contact">
+                <h3 class='<?= $_POST["color"]?>'>Contact</h3>
+                <h4 class='<?= $_POST["color"]?>'>Email</h4>
+                <p><?= $_POST["email"]?></p>
+                <h4 class='<?= $_POST["color"]?>'>Téléphone</h4>
+                <p><?= $_POST["phone"]?></p>
+                <h4 class='<?= $_POST["color"]?>'>Linkedin</h4>
+                <a href="<?= $_POST["linkedin"]?>"><?= $_POST["linkedin"]?></a>
+                <h4 class='<?= $_POST["color"]?>'>GitHub</h4>
+                <a href="<?= $_POST["github"]?>"><?= $_POST["github"]?></a>
+            </section>
+            <h3 class='<?= $_POST["color"]?>'>Biographie</h3>
+            <p><?= $_POST["biographie"]?></p>
+            <h3 class='<?= $_POST["color"]?>'>Loirsirs</h3>
+            <ul>
+                <li><?= $_POST["loisir1"]?></li>
+                <li><?= $_POST["loisir2"]?></li>
+                <li><?= $_POST["loisir3"]?></li>
+                <li><?= $_POST["loisir4"]?></li>
+            </ul>    
+        </article>
+        <article class="right">
+            <h2 class='<?= $_POST["color"]?>'>COMPETENCES</h2>
+            <h3 class='<?= $_POST["color"]?>'>Langages de Programmation</h3>
+            <ul>
+                <?php 
+                    if (isset($_POST["html"])) {
+                        echo "<li>HTML</li>";
+                    }
+                    if (isset($_POST["css"])) {
+                        echo "<li>CSS</li>";
+                    }
+                    if (isset($_POST["javaScript"])) {
+                        echo "<li>JavaScript</li>";
+                    }
+                    if (isset($_POST["php"])) {
+                        echo "<li>PHP</li>";
+                    }
+                    if (isset($_POST["sql"])) {
+                        echo "<li>SQL</li>";
+                    }
+                ?>
+            </ul>
+            <h3 class='<?= $_POST["color"]?>'>Frameworks & Librairies</h3>
+            <ul>
+                <?php 
+                    if (isset($_POST["sass"])) {
+                        echo "<li>SASS</li>";
+                    }
+                    if (isset($_POST["bootstrap"])) {
+                        echo "<li>Bootstrap</li>";
+                    }
+                    if (isset($_POST["symfony"])) {
+                        echo "<li>Symfony</li>";
+                    }
+                    if (isset($_POST["laravel"])) {
+                        echo "<li>Laravel</li>";
+                    }
+                ?>
+            </ul>
+            <h3 class='<?= $_POST["color"]?>'>Logiciels</h3>
+            <ul>
+                <?php 
+                    if (isset($_POST["photoshop"])) {
+                        echo "<li>Photoshop</li>";
+                    }
+                    if (isset($_POST["illustrator"])) {
+                        echo "<li>Illustrator</li>";
+                    }
+                    if (isset($_POST["xd"])) {
+                        echo "<li>XD</li>";
+                    }
+                    if (isset($_POST["figma"])) {
+                        echo "<li>Figma</li>";
+                    }
+                ?>
+            </ul>
+            <h3 class='<?= $_POST["color"]?>'>Langues</h3>
+            <ul>
+                <?php 
+                    if (isset($_POST["francais"])) {
+                        echo "<li>Français</li>";
+                    }
+                    if (isset($_POST["anglais"])) {
+                        echo "<li>Anglais</li>";
+                    }
+                    if (isset($_POST["arabe"])) {
+                        echo "<li>Arabe</li>";
+                    }
+                    if (isset($_POST["breton"])) {
+                        echo "<li>Breton</li>";
+                    }
+                    if (isset($_POST["espagnol"])) {
+                        echo "<li>Espagnol</li>";
+                    }
+                ?>
+            </ul>
+        </article>
+    </div>
+</body>
+</html>
